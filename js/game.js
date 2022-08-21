@@ -1,4 +1,5 @@
 
+
 function inputField(value) {
     const inputValue = document.getElementById(value);
     const inputValueText = parseInt(inputValue.value);
