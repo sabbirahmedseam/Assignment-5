@@ -1,5 +1,5 @@
 
-
+// CALCULATION PART
 
 function inputField(num) {
     const inputValue = document.getElementById(num);
@@ -36,3 +36,4 @@ document.getElementById('btn-total').addEventListener('click', function () {
     const totalCost = playerCost + managerCost + coachCost;
     setInputText('total-cost', totalCost);
 })
+

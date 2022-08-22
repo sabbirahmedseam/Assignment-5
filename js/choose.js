@@ -1,34 +1,31 @@
 
-function exchangeName(one, two, three) {
-    const btn = document.getElementById(one);
-    btn.disabled = true;
-    const title = document.getElementById(two);
-    const titleText = title.innerText;
-    const nameList = document.getElementById(three);
-    nameList.innerText = titleText;
+// PLAYER SELECTED PART
+
+
+const array = [];
+
+function game(array) {
+    const list = document.getElementById('order-list');
+    list.innerHTML = '';
+    for (let i = 0; i < array.length; i++) {
+        const field = array[i];
+        const li = document.createElement('li');
+        li.innerText = field;
+        list.appendChild(li);
+    }
 }
-document.getElementById('select-one').addEventListener('click', function () {
-    exchangeName('select-one', 'title-one', 'first-name');
-})
-document.getElementById('select-two').addEventListener('click', function () {
-    exchangeName('select-two', 'title-two', 'second-name');
-})
-
-document.getElementById('select-three').addEventListener('click', function () {
-    exchangeName('select-three', 'title-three', 'third-name');
-})
-
-document.getElementById('select-four').addEventListener('click', function () {
-    exchangeName('select-four', 'title-four', 'fourth-name');
-})
-
-document.getElementById('select-five').addEventListener('click', function () {
-    exchangeName('select-five', 'title-five', 'fifth-name');
-})
-document.getElementById('select-six').addEventListener('click', function () {
-    exchangeName('select-six', 'title-six', 'fifth-name');
-})
 
 
-const lis = document.getElementById('order-list').childNodes;
-console.log(lis);
+function gameField(btn) {
+    btn.disabled = true;
+    const name = btn.parentNode.children[0].innerText;
+
+    array.push(name);
+    if (array.length <= 5) {
+        game(array)
+    }
+    else {
+        alert('only five players will be allowed');
+    }
+}
+

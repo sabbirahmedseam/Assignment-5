@@ -45,9 +45,10 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-one" class="card-title ">Gonzalo David</h5>
+                                <h6 id="title-one" class="card-title ">Gonzalo David</h6>
                                 <p class="card-text"><span>30 Goals . <span>130 Assits</span></p>
-                                <button id="select-one" class="select- bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-one"
+                                    class="select- bg-primary">select</button>
                             </div>
                         </div>
                     </div>
@@ -57,9 +58,10 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-two" class="card-title">Neimar Jr</h5>
+                                <h6 id="title-two" class="card-title">Neimar Junior</h6>
                                 <p class="card-text"><span>35 Goals . <span>135 Assits</span></p>
-                                <button id="select-two" class="select bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-two"
+                                    class="select bg-primary">select</button>
                             </div>
                         </div>
                     </div>
@@ -69,9 +71,10 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-three" class="card-title">Lionel Messi</h5>
+                                <h6 id="title-three" class="card-title">Lionel Messi</h6>
                                 <p class="card-text"><span>20 Goals . <span>120 Assits</span></p>
-                                <button id="select-three" class="select bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-three"
+                                    class="select bg-primary">select</button>
                             </div>
                         </div>
                     </div>
@@ -80,11 +83,7 @@
                     <div class="row bg-primary">
                         <h1>Selected-V</h1>
                         <ol id="order-list">
-                            <li id="first-name">Neimar Jr</li>
-                            <li id="second-name">Lionel Messi</li>
-                            <li id="third-name">Marko Reus</li>
-                            <li id="fourth-name">Steffen Gerrard</li>
-                            <li id="fifth-name">Ronaldo Jr</li>
+
                         </ol>
                     </div>
                 </div>
@@ -97,9 +96,10 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-four" class="card-title">David Beckham</h5>
+                                <h6 id="title-four" class="card-title">David Beckham</h6>
                                 <p class="card-text"><span>40 Goals . <span>140 Assits</span></p>
-                                <button id="select-four" class="select bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-four"
+                                    class="select bg-primary">select</button>
                             </div>
                         </div>
                     </div>
@@ -109,9 +109,10 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-five" class="card-title">Marko Reus</h5>
+                                <h6 id="title-five" class="card-title">Marko Reus</h6>
                                 <p class="card-text"><span>33 Goals . <span>133 Assits</span></p>
-                                <button id="select-five" class="select bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-five"
+                                    class="select bg-primary">select</button>
                             </div>
                         </div>
                     </div>
@@ -121,26 +122,27 @@
                         <div class="card">
                             <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column align-items-center">
-                                <h5 id="title-six" class="card-title">David Alaba</h5>
+                                <h6 id="title-six" class="card-title">David Alaba</h6>
                                 <p class="card-text"><span>36 Goals . <span>130 Assits</span></p>
-                                <button id="select-six" class="select bg-primary">select</button>
+                                <button onclick="gameField(this)" id="select-six"
+                                    class="select bg-primary">select</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3 bg-success">
-                    <div class="row">
+                    <div class="row text-warning">
                         <h1>Budget</h1>
-                        <span>Per PLayer</span>
+                        <span>Per PLayer :</span>
                         <input class="border-0" type="text" name="" id="per-player" placeholder="1000"><br><br>
                         <button class="border-0" id="btn-calc">Calculate</button>
-                        <p>Player Expenses $<span id="player-cost">5000</span></p>
-                        <span>Manager</span>
+                        <p>Player Expenses : $<span id="player-cost">5000</span></p>
+                        <span>Manager :</span>
                         <input class="border-0" type="text" name="" id="mng-field" placeholder="2000"><br><br>
-                        <span>Coach</span>
+                        <span>Coach :</span>
                         <input class="border-0" type="text" name="" id="coach-cost" placeholder="4000"> <br><br>
                         <button class="border-0" id="btn-total">Calculate Total</button>
-                        <p>Total $<span id="total-cost">11000</span></p>
+                        <p>Total : $<span id="total-cost">11000</span></p>
 
                     </div>
                 </div>
@@ -152,7 +154,6 @@
 
     <script src="js/game.js"></script>
     <script src="js/choose.js"></script>
-
 
 </body>
 
