@@ -8,23 +8,151 @@
     <title>Players Selection</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .card {
+            background-color: coral;
+        }
+    </style>
 </head>
 
-<body class="bg-danger text-success">
-    <section>
-        <h1>Budged</h1>
-        <span>Per Player</span>
-        <input type="text" name="" id="per-player" placeholder="1000"> <br><br>
-        <button id="btn-calc">Calculate</button>
-        <p>Player Expenses $<span id="player-cost">5000</span></p>
-        <span>Manager</span>
-        <input type="text" name="" id="mng-cost" placeholder="2000"><br><br>
-        <span>Coach</span>
-        <input type="text" name="" id="coach-cost" placeholder="4000"> <br><br>
-        <button id="btn-total">Calculate</button>
-        <p>Total $<span id="total-cost">11000</span></p>
-        <script src="js/game.js"></script>
+<body class="bg-dark text-white">
+    <!-- header part start -->
+    <section class="container-fluid text-center">
+        <div class="d-flex align-items-center">
+            <div>
+                <img src="images/images (1).jpg" alt="">
+            </div>
+            <div>
+                <h1>Five Players will be taken</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet dolorum soluta modi provident saepe
+                    eaque, amet illum eligendi odio perferendis.</p>
+            </div>
+            <div>
+                <img src="images/images (2).jpg" alt="">
+            </div>
+        </div>
     </section>
+    <!-- header part end -->
+
+    <!-- palyers card start -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-one" class="card-title ">Gonzalo David</h5>
+                                <p class="card-text"><span>30 Goals . <span>130 Assits</span></p>
+                                <button id="select-one" class="select- bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-two" class="card-title">Neimar Jr</h5>
+                                <p class="card-text"><span>35 Goals . <span>135 Assits</span></p>
+                                <button id="select-two" class="select bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-three" class="card-title">Lionel Messi</h5>
+                                <p class="card-text"><span>20 Goals . <span>120 Assits</span></p>
+                                <button id="select-three" class="select bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row bg-primary">
+                        <h1>Selected-V</h1>
+                        <ol id="order-list">
+                            <li id="first-name">Neimar Jr</li>
+                            <li id="second-name">Lionel Messi</li>
+                            <li id="third-name">Marko Reus</li>
+                            <li id="fourth-name">Steffen Gerrard</li>
+                            <li id="fifth-name">Ronaldo Jr</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- first image -->
+            <div class="row mt-5">
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-four" class="card-title">David Beckham</h5>
+                                <p class="card-text"><span>40 Goals . <span>140 Assits</span></p>
+                                <button id="select-four" class="select bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-five" class="card-title">Marko Reus</h5>
+                                <p class="card-text"><span>33 Goals . <span>133 Assits</span></p>
+                                <button id="select-five" class="select bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <div class="card">
+                            <img class="img-fluid" src="images/download (3).jpg" class="card-img-top" alt="">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 id="title-six" class="card-title">David Alaba</h5>
+                                <p class="card-text"><span>36 Goals . <span>130 Assits</span></p>
+                                <button id="select-six" class="select bg-primary">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 bg-success">
+                    <div class="row">
+                        <h1>Budget</h1>
+                        <span>Per PLayer</span>
+                        <input class="border-0" type="text" name="" id="per-player" placeholder="1000"><br><br>
+                        <button class="border-0" id="btn-calc">Calculate</button>
+                        <p>Player Expenses $<span id="player-cost">5000</span></p>
+                        <span>Manager</span>
+                        <input class="border-0" type="text" name="" id="mng-field" placeholder="2000"><br><br>
+                        <span>Coach</span>
+                        <input class="border-0" type="text" name="" id="coach-cost" placeholder="4000"> <br><br>
+                        <button class="border-0" id="btn-total">Calculate Total</button>
+                        <p>Total $<span id="total-cost">11000</span></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/game.js"></script>
+    <script src="js/choose.js"></script>
+
 
 </body>
 

@@ -1,40 +1,38 @@
 
 
-function inputField(value) {
-    const inputValue = document.getElementById(value);
+
+function inputField(num) {
+    const inputValue = document.getElementById(num);
     const inputValueText = parseInt(inputValue.value);
+    inputValue.value = inputValueText;
+
     if (isNaN(inputValueText)) {
         alert('pls give a number');
     }
-    inputValue.value = inputValueText;
-    // inputValue.value = '';
+    inputValue.value = '';
     return inputValueText;
-
 }
 
-function setValue(idName, rate) {
-    const deploy = document.getElementById(idName);
-    deploy.innerText = rate;
+function setInputText(idName, value) {
+    const inputDigit = document.getElementById(idName);
+    inputDigit.innerText = value;
 }
-
-
 
 document.getElementById('btn-calc').addEventListener('click', function () {
     const perPlayer = inputField('per-player');
-
-    const playerRate = 5 * perPlayer;
-    setValue('player-cost', playerRate);
+    const playerCost = 5 * perPlayer;
+    setInputText('player-cost', playerCost);
 
 })
-
 document.getElementById('btn-total').addEventListener('click', function () {
-    const perPlayer = parseInt(document.getElementById('player-cost').innerText);
-    //    Following is an input tag
-    const mngCost = inputField('mng-cost');
+    const playerCost = parseInt(document.getElementById('player-cost').innerText);
 
-    //    Following is an input tag
-    const coachCost = inputField('coach-cost');
-    const totalCoast = perPlayer + mngCost + coachCost;
-    setValue('total-cost', totalCoast);
 
+    // follwing is an input field
+    const managerCost = inputField('mng-field');
+
+    // follwing is an input field
+    const coachCost = inputField('coach-cost')
+    const totalCost = playerCost + managerCost + coachCost;
+    setInputText('total-cost', totalCost);
 })
